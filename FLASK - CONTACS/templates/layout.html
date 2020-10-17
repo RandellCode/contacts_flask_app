@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+<title>Contacts flaskApp</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Flask App Contacts</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+    </nav>
+<div class="container pt-4">
+    {% block body %}
+
+
+    {% endblock %}
+</div>
+<br><br><br><br><br><br><br><br><br>
+<footer>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Flask App Contacts</h5>
+            <p class="card-text">&copy; Randell Code &escr;</p>
+        </div>
+        <div class="card-footer">
+            Aplicacion creada por randell code
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
